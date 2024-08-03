@@ -60,6 +60,7 @@ VALIDITY() {
     fi
 }
 IZIN=$(curl https://raw.githubusercontent.com/${GitUser}/allow/main/ipvps.conf | awk '{print $5}' | grep $MYIP)
+IZIN2=$(curl -sS https://raw.githubusercontent.com/${GitUser}/allow/main/ipvps.conf | awk '{print $5}')
 
 
 if [ $MYIP = $IZIN ]; then
@@ -68,7 +69,7 @@ if [ $MYIP = $IZIN ]; then
 else
     echo -e "\e[31mPermission Denied!\e[0m"
     echo -e "\e[31mPlease buy script first\e[0m"
-    echo $IZIN
+    echo $IZIN2
     rm -f setup.sh
     exit 0
 fi

@@ -1,6 +1,6 @@
 #!/bin/bash
 #wget https://github.com/${GitUser}/
-GitUser="DryanZ"
+GitUser="refky21"
 # Color Validation
 Lred='\e[1;91m'
 Lgreen='\e[92m'
@@ -26,7 +26,7 @@ echo -e "$Lyellow                    CONTACT TELEGRAM"$NC
 echo -e "$Lyellow                       @Dyanvx199"$NC
 echo -e "$green.........................................................."$NC
 echo ''
-echo -e "$Lyellow                       Tunggu 5 Saat!"$NC
+echo -e "$Lyellow                       Tunggu Dulu 5 Dettik!"$NC
 echo -e "$green.........................................................."$NC
 sleep 5
 clear

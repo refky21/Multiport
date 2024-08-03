@@ -56,7 +56,9 @@ else
     exit 0
 fi
 
-
+echo -e "$Lyellow                       Tunggu Dulu 5 Detik!"$NC
+echo -e "$green.........................................................."$NC
+sleep 5
 
 # ===================
 echo ''

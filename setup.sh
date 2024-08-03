@@ -29,7 +29,7 @@ echo ''
 echo -e "$Lyellow                       Tunggu Dulu 5 Detik!"$NC
 echo -e "$green.........................................................."$NC
 sleep 5
-clear
+
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
 		exit 1
@@ -44,7 +44,7 @@ NC='\e[0m'
 #IZIN SCRIPT
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
-clear
+
 
 # Valid Script
 VALIDITY() {
@@ -69,12 +69,12 @@ else
     rm -f setup.sh
     exit 0
 fi
-clear
+
 echo -e "\e[32mloading...\e[0m"
-clear
+
 mkdir /var/lib/premium-script;
 default_email=$( curl https://raw.githubusercontent.com/${GitUser}/email/main/default.conf )
-clear
+
 #Nama penyedia script
 echo -e "\e[1;32m════════════════════════════════════════════════════════════\e[0m"
 echo ""

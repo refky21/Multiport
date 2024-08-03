@@ -1,35 +1,4 @@
 #!/bin/bash
-#wget https://github.com/${GitUser}/
-GitUser="refky21"
-# Color Validation
-Lred='\e[1;91m'
-Lgreen='\e[92m'
-Lyellow='\e[93m'
-green='\e[32m'
-RED='\033[0;31m'
-NC='\033[0m'
-BGBLUE='\e[1;44m'
-ORANGE='\033[0;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-NC='\033[0;37m'
-# ===================
-echo ''
-clear
-echo ''
-echo "                                                              "
-echo -e "$Lyellow                  ⚡ PREMIUM AUTOSCRIPT ⚡"$NC
-echo -e "$green.........................................................."$NC
-echo -e "$Lyellow                  Autoscript By Dyanvx199"$NC
-echo -e "$Lyellow                    CONTACT TELEGRAM"$NC
-echo -e "$Lyellow                       @Dyanvx199"$NC
-echo -e "$green.........................................................."$NC
-echo ''
-echo -e "$Lyellow                       Tunggu Dulu 5 Detik!"$NC
-echo -e "$green.........................................................."$NC
-sleep 5
-
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
 		exit 1
@@ -60,8 +29,22 @@ VALIDITY() {
     fi
 }
 IZIN=$(curl https://raw.githubusercontent.com/${GitUser}/allow/main/ipvps.conf | awk '{print $5}' | grep $MYIP)
-IZIN2=$(curl -sS https://raw.githubusercontent.com/${GitUser}/allow/main/ipvps.conf | awk '{print $5}')
 
+#wget https://github.com/${GitUser}/
+GitUser="refky21"
+# Color Validation
+Lred='\e[1;91m'
+Lgreen='\e[92m'
+Lyellow='\e[93m'
+green='\e[32m'
+RED='\033[0;31m'
+NC='\033[0m'
+BGBLUE='\e[1;44m'
+ORANGE='\033[0;33m'
+BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
+CYAN='\033[0;36m'
+NC='\033[0;37m'
 
 if [ $MYIP = $IZIN ]; then
     echo -e "\e[32mPermission Accepted...\e[0m"
@@ -69,10 +52,32 @@ if [ $MYIP = $IZIN ]; then
 else
     echo -e "\e[31mPermission Denied!\e[0m"
     echo -e "\e[31mPlease buy script first\e[0m"
-    echo $IZIN2
     rm -f setup.sh
     exit 0
 fi
+
+
+
+# ===================
+echo ''
+clear
+echo ''
+echo "                                                              "
+echo -e "$Lyellow                  ⚡ PREMIUM AUTOSCRIPT ⚡"$NC
+echo -e "$green.........................................................."$NC
+echo -e "$Lyellow                  Autoscript By Dyanvx199"$NC
+echo -e "$Lyellow                    CONTACT TELEGRAM"$NC
+echo -e "$Lyellow                       @Dyanvx199"$NC
+echo -e "$green.........................................................."$NC
+echo ''
+echo -e "$Lyellow                       Tunggu Dulu 5 Detik!"$NC
+echo -e "$green.........................................................."$NC
+sleep 5
+
+
+
+
+
 
 echo -e "\e[32mloading...\e[0m"
 

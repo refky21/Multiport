@@ -60,6 +60,9 @@ VALIDITY() {
     fi
 }
 IZIN=$(curl https://raw.githubusercontent.com/${GitUser}/allow/main/ipvps.conf | awk '{print $5}' | grep $MYIP)
+
+echo $IZIN
+exit 0
 if [ $MYIP = $IZIN ]; then
     echo -e "\e[32mPermission Accepted...\e[0m"
     VALIDITY
